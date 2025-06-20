@@ -193,6 +193,11 @@ h3 {
   background-color: rgba(64, 75, 191, 1);
 }
 
+.footer .social-link:hover,
+.footer .social-link:focus {
+  background-color: #31d0aa;
+}
+
 .social-img {
   width: 16px;
   height: 16px;
@@ -380,7 +385,7 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
 
@@ -419,15 +424,14 @@ footer {
 
 .footter-container {
   display: flex;
-  align-items: start;
+  align-items: baseline;
   justify-content: start;
-  gap: 120px;
 }
 
 .footer-social-list {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 16px;
 }
 
 .footer-social-img {
@@ -441,4 +445,12 @@ footer {
 
 .card-d-icon-fill {
   fill: #f4f4fd;
+}
+
+.footer-left-part {
+  margin-right: 120px;
+}
+
+.footer-list-item {
+  height: 40px;
 }
