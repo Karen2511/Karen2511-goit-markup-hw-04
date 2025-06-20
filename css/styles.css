@@ -122,10 +122,11 @@ h3 {
 }
 
 .secta {
-  background-color: #2e2f42;
   text-align: center;
-
   padding: 188px 0 188px;
+  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url("../images/people-office1.jpg");
+  background-blend-mode: multiply;
 }
 
 .secta-text {
@@ -160,6 +161,47 @@ h3 {
   height: 56px;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(77, 90, 229, 1);
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.social-img {
+  width: 16px;
+  height: 16px;
+}
+
+.card-icon {
+  background-color: rgba(244, 244, 253, 1);
+  border: rgba(142, 143, 153, 1) 1px solid;
+
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
 }
 
 .btn:hover,
@@ -241,6 +283,7 @@ footer {
   color: #2e2f42;
   width: 264px;
   margin-bottom: 8px;
+  margin-top: 8px;
 }
 .card-subtitle-b {
   text-align: center;
@@ -314,4 +357,61 @@ footer {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.footer-pp {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2%;
+  margin-bottom: 16px;
+}
+
+.portfolio-img-text {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-img-info {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: rgba(244, 244, 253, 1);
+  background-color: rgba(77, 90, 229, 1);
+  width: 100%;
+  height: 100%;
+  padding: 40px 32px;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.border-card:has(.text-pid-foto-b:hover) .portfolio-img-info {
+  top: 0;
+}
+
+.border-card:has(.text-pid-foto-b:hover) {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.footer-social-media {
+}
+
+.footter-container {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 120px;
+}
+
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-social-img {
+  width: 24px;
+  height: 24px;
 }
